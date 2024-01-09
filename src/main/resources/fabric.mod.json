@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "funkyweapons",
+	"version": "${version}",
+	"name": "Funky Weapons",
+	"description": "This a mod",
+	"authors": [
+		"ByteMe7"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/funkyweapons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.funkystudios.funkyweapons.FunkyWeapons"
+		],
+		"client": [
+			"net.funkystudios.funkyweapons.FunkyWeaponsClient"
+		],
+		"fabric-datagen": [
+			"net.funkystudios.funkyweapons.FunkyWeaponsDataGenerator"
+		]
+	},
+	"mixins": [
+		"funkyweapons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
