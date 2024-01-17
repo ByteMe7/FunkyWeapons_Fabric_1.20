@@ -4,9 +4,15 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.funkystudios.funkyweapons.FunkyWeapons;
+import net.funkystudios.funkyweapons.block.ModBlocks;
+import net.funkystudios.funkyweapons.fluid.ModFluids;
+import net.funkystudios.funkyweapons.fluid.ObsidianTearsFluid;
+import net.funkystudios.funkyweapons.item.custom.CustomBucketItem;
 import net.funkystudios.funkyweapons.item.custom.DrinkItem;
 import net.funkystudios.funkyweapons.item.custom.weapon.MacuahuitlItem;
 import net.funkystudios.funkyweapons.util.ModFoodComponets;
+import net.funkystudios.funkyweapons.util.NumberFuctions;
+import net.minecraft.block.FluidBlock;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -38,7 +44,9 @@ public class ModItems {
             TURQUOISE_HOE,
             MUG,
             HOT_CHOCOLATE,
-            ROASTED_HOT_CHOCOLATE;
+            ROASTED_HOT_CHOCOLATE,
+    OBSIDIAN_TEARS_BUCKET,
+    APACHE_TEARS_BUCKET;
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(FunkyWeapons.MOD_ID, name), item);
@@ -103,6 +111,8 @@ public class ModItems {
         HOT_CHOCOLATE = registerItem("hot_chocolate", new DrinkItem(new Item.Settings().food(ModFoodComponets.HOT_CHOCOLATE),40, MUG));
         ROASTED_HOT_CHOCOLATE = registerItem("roasted_hot_chocolate", new DrinkItem(new Item.Settings().food(ModFoodComponets.ROASTED_HOT_CHOCOLATE),40, MUG));
 
+        OBSIDIAN_TEARS_BUCKET = registerItem("obsidian_tears_bucket", new CustomBucketItem(ModFluids.OBSIDIAN_TEARS_STILL, new Item.Settings(), NumberFuctions.hexToInt("210a39")));
+        APACHE_TEARS_BUCKET = registerItem("apache_tears_bucket", new CustomBucketItem(ModFluids.APACHE_TEARS_STILL, new Item.Settings(), NumberFuctions.hexToInt("07f5ed")));
     }
 
 }

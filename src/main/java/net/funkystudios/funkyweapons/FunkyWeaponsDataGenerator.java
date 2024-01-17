@@ -6,7 +6,11 @@ import net.funkystudios.funkyweapons.datagen.ModItemTagProvider;
 import net.funkystudios.funkyweapons.datagen.ModLangProvider;
 import net.funkystudios.funkyweapons.datagen.ModModelProvider;
 import net.funkystudios.funkyweapons.datagen.ModRecipeProvider;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class FunkyWeaponsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -17,4 +21,7 @@ public class FunkyWeaponsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLangProvider::new);
 		pack.addProvider(ModModelProvider::new);
 	}
+
+
+
 }

@@ -17,7 +17,6 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
-
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
@@ -29,18 +28,18 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 import java.util.Random;
 
-public abstract class ObsidianTearsFluid extends FlowableFluid {
+public abstract class ApacheTearsFluid extends FlowableFluid {
 
     public Fluid getFlowing() {
-        return ModFluids.OBSIDIAN_TEARS_FLOWING;
+        return ModFluids.APACHE_TEARS_FLOWING;
     }
 
     public Fluid getStill() {
-        return ModFluids.OBSIDIAN_TEARS_STILL;
+        return ModFluids.APACHE_TEARS_STILL;
     }
 
     public Item getBucketItem() {
-        return ModItems.OBSIDIAN_TEARS_BUCKET;
+        return ModItems.APACHE_TEARS_BUCKET;
     }
 
     public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
@@ -80,11 +79,11 @@ public abstract class ObsidianTearsFluid extends FlowableFluid {
     }
 
     public BlockState toBlockState(FluidState state) {
-        return ModBlocks.OBSIDIAN_TEARS_BLOCK.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
+        return ModBlocks.APACHE_TEARS_BLOCK.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
     }
 
     public boolean matchesType(Fluid fluid) {
-        return fluid == ModFluids.OBSIDIAN_TEARS_STILL || fluid == ModFluids.OBSIDIAN_TEARS_FLOWING;
+        return fluid == ModFluids.APACHE_TEARS_FLOWING || fluid == ModFluids.APACHE_TEARS_STILL;
     }
 
     public int getLevelDecreasePerBlock(WorldView world) {
@@ -104,7 +103,7 @@ public abstract class ObsidianTearsFluid extends FlowableFluid {
         return Optional.of(SoundEvents.ITEM_BUCKET_FILL);
     }
 
-    public static class Flowing extends ObsidianTearsFluid {
+    public static class Flowing extends ApacheTearsFluid {
 
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -130,7 +129,7 @@ public abstract class ObsidianTearsFluid extends FlowableFluid {
         }
     }
 
-    public static class Still extends ObsidianTearsFluid {
+    public static class Still extends ApacheTearsFluid {
 
         @Override
         protected boolean isInfinite(World world) {

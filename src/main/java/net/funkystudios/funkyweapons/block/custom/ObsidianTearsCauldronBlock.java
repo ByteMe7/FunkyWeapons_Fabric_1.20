@@ -26,7 +26,7 @@ import java.util.Map;
 public class ObsidianTearsCauldronBlock extends LeveledCauldronBlock {
 
     public ObsidianTearsCauldronBlock() {
-        super(AbstractBlock.Settings.copy(Blocks.CAULDRON), null, ModCauldronBehavior.OBSIDIAN_TEARS_CAULDRON);
+        super(AbstractBlock.Settings.copy(Blocks.WATER_CAULDRON).mapColor(MapColor.DARK_DULL_PINK), null, ModCauldronBehavior.OBSIDIAN_TEARS_CAULDRON);
         this.setDefaultState((BlockState) ((BlockState) this.stateManager.getDefaultState().with(LEVEL,1)));
     }
 

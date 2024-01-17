@@ -3,6 +3,7 @@ package net.funkystudios.funkyweapons.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.funkystudios.funkyweapons.FunkyWeapons;
 import net.funkystudios.funkyweapons.block.ModBlocks;
+import net.funkystudios.funkyweapons.fluid.ModFluids;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;

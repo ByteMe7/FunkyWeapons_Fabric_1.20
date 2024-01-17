@@ -13,7 +13,7 @@ public class ObsidianTearsEffect extends InstantStatusEffect {
 
 
     public ObsidianTearsEffect() {
-        super(StatusEffectCategory.HARMFUL, NumberFuctions.hexToInt(""));
+        super(StatusEffectCategory.HARMFUL, NumberFuctions.hexToInt("210a39"));
     }
 
     @Override

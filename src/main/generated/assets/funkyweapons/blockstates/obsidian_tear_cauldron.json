@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
-      "model": "minecraft:block/water_cauldron"
+    "level=1": {
+      "model": "funkyweapons:block/obsidian_tear_cauldron_level1"
+    },
+    "level=2": {
+      "model": "funkyweapons:block/obsidian_tear_cauldron_level2"
+    },
+    "level=3": {
+      "model": "funkyweapons:block/obsidian_tear_cauldron_full"
     }
   }
 }
