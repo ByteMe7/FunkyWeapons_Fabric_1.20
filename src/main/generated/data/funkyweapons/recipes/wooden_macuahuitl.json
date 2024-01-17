@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "!": {
+      "item": "minecraft:stick"
+    },
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "^": {
+      "item": "funkyweapons:wooden_spike"
+    }
+  },
+  "pattern": [
+    " ^#",
+    "^#^",
+    "!^ "
+  ],
+  "result": {
+    "item": "funkyweapons:wooden_macuahuitl"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond_spike": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "funkyweapons:diamond_spike"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_golden_macuahuitl": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "funkyweapons:gold_macuahuitl"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:diamond_macuahuitl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_golden_macuahuitl",
+      "has_diamond_spike",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:diamond_macuahuitl"
+    ]
+  },
+  "sends_telemetry_event": false
+}

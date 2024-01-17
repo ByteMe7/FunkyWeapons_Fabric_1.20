@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "funkyweapons:item/obsidian_macuahuitl"
+  }
+}

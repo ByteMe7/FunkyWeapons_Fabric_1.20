@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "funkyweapons:iron_macuahuitl",
+    "funkyweapons:gold_macuahuitl",
+    "funkyweapons:diamond_macuahuitl",
+    "funkyweapons:netherite_macuahuitl"
+  ]
+}

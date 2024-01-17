@@ -1,7 +1,6 @@
 package net.funkystudios.funkyweapons.item;
 
 import net.funkystudios.funkyweapons.block.ModBlocks;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -14,7 +13,7 @@ public enum ModToolMaterials implements ToolMaterial {
     OBSIDIAN(5,3561,10.5f,5.0f,6,
             () -> Ingredient.ofItems(Items.CRYING_OBSIDIAN)),
     TURQUOISE_OBSIDIAN(5,5031, 12.3f,6.0f, 45,
-            () -> Ingredient.ofItems(ModBlocks.TURQUOISE_OBSIDIAN));
+            () -> Ingredient.ofItems(ModBlocks.TURQUOISE_CRYING_OBSIDIAN));
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;

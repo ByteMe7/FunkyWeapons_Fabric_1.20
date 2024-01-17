@@ -9,5 +9,6 @@ public class ModEffectInstances {
         public static final StatusEffectInstance SHORT_SPEED = new StatusEffectInstance(StatusEffects.SPEED,60);
         public static final StatusEffectInstance LONG_SPEED = new StatusEffectInstance(StatusEffects.SPEED,240);
         public static final StatusEffectInstance SHORT_FIRE_RES = new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,160);
+        public static final StatusEffectInstance LONG_NAUSEA = new StatusEffectInstance(StatusEffects.NAUSEA, 4000);
     }
 }

@@ -3,10 +3,11 @@ package net.funkystudios.funkyweapons.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.funkystudios.funkyweapons.FunkyWeapons;
+import net.funkystudios.funkyweapons.block.custom.ApacheTearsCauldronBlock;
+import net.funkystudios.funkyweapons.block.custom.ObsidianTearsCauldronBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.LeveledCauldronBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -16,8 +17,9 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block TURQUOISE_BLOCK,
             RAW_TURQUOISE_BLOCK,
-    TURQUOISE_OBSIDIAN,
-    OBSIDIAN_TEAR_CAULDRON;
+            TURQUOISE_CRYING_OBSIDIAN,
+    OBSIDIAN_TEAR_CAULDRON,
+    APACHE_TEAR_CAULDRON;
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
@@ -37,7 +39,8 @@ public class ModBlocks {
     static {
         TURQUOISE_BLOCK = registerBlock("turquoise_block", new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS)));
         RAW_TURQUOISE_BLOCK = registerBlock("raw_turquoise_block", new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS)));
-        TURQUOISE_OBSIDIAN = registerBlock("turquoise_obsidian_block", new Block(FabricBlockSettings.copyOf(Blocks.CRYING_OBSIDIAN)));
-        OBSIDIAN_TEAR_CAULDRON = registerBlock("obsidian_tear_cauldron", new LeveledCauldronBlock(AbstractBlock.Settings.copy(Blocks.CAULDRON), null,null));
+        TURQUOISE_CRYING_OBSIDIAN = registerBlock("turquoise_crying_obsidian_block", new Block(FabricBlockSettings.copyOf(Blocks.CRYING_OBSIDIAN)));
+        OBSIDIAN_TEAR_CAULDRON = registerBlock("obsidian_tear_cauldron", new ObsidianTearsCauldronBlock());
+        APACHE_TEAR_CAULDRON = registerBlock("apache_tear_cauldron", new ApacheTearsCauldronBlock());
     }
 }

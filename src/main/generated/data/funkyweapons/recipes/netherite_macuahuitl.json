@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "funkyweapons:netherite_spike"
+  },
+  "base": {
+    "item": "funkyweapons:diamond_macuahuitl"
+  },
+  "result": {
+    "item": "funkyweapons:netherite_macuahuitl"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

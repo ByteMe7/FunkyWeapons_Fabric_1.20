@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "funkyweapons:wooden_macuahuitl"
+    },
+    "^": {
+      "item": "funkyweapons:stone_spike"
+    }
+  },
+  "pattern": [
+    " ^ ",
+    "^#^",
+    " ^ "
+  ],
+  "result": {
+    "item": "funkyweapons:stone_macuahuitl"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "funkyweapons:iron_macuahuitl"
+    },
+    "^": {
+      "item": "funkyweapons:gold_spike"
+    }
+  },
+  "pattern": [
+    " ^ ",
+    "^#^",
+    " ^ "
+  ],
+  "result": {
+    "item": "funkyweapons:gold_macuahuitl"
+  },
+  "show_notification": true
+}

@@ -24,9 +24,9 @@ public class ModItemTabs {
 
     public static ItemGroup FUNKY_BLOCKS
             = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(FunkyWeapons.MOD_ID,"blocks"),
+            new Identifier(FunkyWeapons.MOD_ID,"funkyblocks"),
             FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemtab.blocks"))
+                    .displayName(Text.translatable("itemgroup.funkyblocks"))
                     .icon(() -> new ItemStack(ModBlocks.TURQUOISE_BLOCK))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.TURQUOISE_BLOCK);

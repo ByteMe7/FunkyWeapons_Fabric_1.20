@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_iron_spike": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "funkyweapons:iron_spike"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone_macuahuitl": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "funkyweapons:stone_macuahuitl"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:iron_macuahuitl"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stone_macuahuitl",
+      "has_iron_spike",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:iron_macuahuitl"
+    ]
+  },
+  "sends_telemetry_event": false
+}

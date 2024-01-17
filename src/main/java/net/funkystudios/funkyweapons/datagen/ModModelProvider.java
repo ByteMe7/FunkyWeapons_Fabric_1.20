@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.funkystudios.funkyweapons.block.ModBlocks;
 import net.funkystudios.funkyweapons.item.ModItems;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -17,7 +19,10 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TURQUOISE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TURQUOISE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TURQUOISE_OBSIDIAN);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TURQUOISE_CRYING_OBSIDIAN);
+
+        registerCauldronLikeModel(blockStateModelGenerator, ModBlocks.OBSIDIAN_TEAR_CAULDRON);
+        registerCauldronLikeModel(blockStateModelGenerator, ModBlocks.APACHE_TEAR_CAULDRON);
 
     }
 
@@ -52,4 +57,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TURQUOISE_OBSIDIAN_MACUAHUITL, Models.HANDHELD);
 
     }
+
+    private static void registerCauldronLikeModel(BlockStateModelGenerator blockStateModelGenerator, Block block){
+        blockStateModelGenerator.registerParented(Blocks.WATER_CAULDRON,block);
+    }
+
 }

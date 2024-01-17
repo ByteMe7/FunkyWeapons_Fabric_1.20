@@ -2,9 +2,12 @@ package net.funkystudios.funkyweapons;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.funkystudios.funkyweapons.alchemy.effect.ModEffects;
+import net.funkystudios.funkyweapons.alchemy.potion.ModPotions;
 import net.funkystudios.funkyweapons.block.ModBlocks;
 import net.funkystudios.funkyweapons.item.ModItemTabs;
 import net.funkystudios.funkyweapons.item.ModItems;
+import net.funkystudios.funkyweapons.util.ModCauldronBehavior;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,5 +22,11 @@ public class FunkyWeapons implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModCauldronBehavior.registerBehavior();
+
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
+		ModCauldronBehavior.registerBehavior();
 	}
+
 }
